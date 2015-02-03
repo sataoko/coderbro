@@ -1,0 +1,24 @@
+public static string @MethodName(@MethodParameters)
+{
+            SqlConnection conn = new SqlConnection("Persist Security Info=True;User ID=_YourSqlUserID;Password=__YourPassword;Initial Catalog=_yourDatabaseName;Data Source=_YourServerName");
+//            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ToString());          
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+                conn.Open();
+                string updateSQL= @UpdateString;
+                @CommandParametersSection
+                cmd.CommandText = updateSQL;
+                cmd.ExecuteNonQuery();
+                return "OK";
+            }
+            catch (Exception exp)
+            {
+                return exp.ToString();
+            }
+            finally
+            {
+                conn.Close();
+            }
+}

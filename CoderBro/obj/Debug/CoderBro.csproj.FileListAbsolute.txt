@@ -1,0 +1,46 @@
+E:\__C#.NET Folders\C#.Net Projects\CoderBro\CoderBro\bin\Debug\CoderBro.exe
+E:\__C#.NET Folders\C#.Net Projects\CoderBro\CoderBro\bin\Debug\CoderBro.pdb
+E:\__C#.NET Folders\C#.Net Projects\CoderBro\CoderBro\obj\Debug\CoderBro.frmMain.resources
+E:\__C#.NET Folders\C#.Net Projects\CoderBro\CoderBro\obj\Debug\CoderBro.Properties.Resources.resources
+E:\__C#.NET Folders\C#.Net Projects\CoderBro\CoderBro\obj\Debug\CoderBro.exe
+E:\__C#.NET Folders\C#.Net Projects\CoderBro\CoderBro\obj\Debug\CoderBro.pdb
+E:\__C#.NET Folders\C#.NetProjects\CoderBro\CoderBro\obj\Debug\CoderBro.exe
+E:\__C#.NET Folders\C#.NetProjects\CoderBro\CoderBro\obj\Debug\CoderBro.pdb
+E:\__C#.NET Folders\C#.NetProjects\CoderBro\CoderBro\bin\Debug\CoderBro.exe
+E:\__C#.NET Folders\C#.NetProjects\CoderBro\CoderBro\bin\Debug\CoderBro.pdb
+E:\__C#.NET Folders\C#.NetProjects\CoderBro\CoderBro\obj\Debug\ResolveAssemblyReference.cache
+E:\__C#.NET Folders\C#.NetProjects\CoderBro\CoderBro\obj\Debug\CoderBro.frmMain.resources
+E:\__C#.NET Folders\C#.NetProjects\CoderBro\CoderBro\obj\Debug\CoderBro.Properties.Resources.resources
+E:\__C#.NET Folders\C#.NetProjects\CoderBro\CoderBro\obj\Debug\GenerateResource-ResGen.read.1.tlog
+E:\__C#.NET Folders\C#.NetProjects\CoderBro\CoderBro\obj\Debug\GenerateResource-ResGen.read.4.tlog
+E:\__C#.NET Folders\C#.NetProjects\CoderBro\CoderBro\obj\Debug\GenerateResource-ResGen.read.9.tlog
+E:\__C#.NET Folders\C#.NetProjects\CoderBro\CoderBro\obj\Debug\GenerateResource-ResGen.write.1.tlog
+F:\__C#.NET Folders\C#.Net Projects\CoderBro\CoderBro\obj\Debug\CoderBro.exe
+F:\__C#.NET Folders\C#.Net Projects\CoderBro\CoderBro\obj\Debug\CoderBro.pdb
+F:\__C#.NET Folders\C#.Net Projects\CoderBro\CoderBro\bin\Debug\CoderBro.exe
+F:\__C#.NET Folders\C#.Net Projects\CoderBro\CoderBro\bin\Debug\CoderBro.pdb
+F:\__C#.NET Folders\C#.Net Projects\CoderBro\CoderBro\obj\Debug\ResolveAssemblyReference.cache
+F:\__C#.NET Folders\C#.Net Projects\CoderBro\CoderBro\obj\Debug\CoderBro.frmMain.resources
+F:\__C#.NET Folders\C#.Net Projects\CoderBro\CoderBro\obj\Debug\CoderBro.frmProjectDetails.resources
+F:\__C#.NET Folders\C#.Net Projects\CoderBro\CoderBro\obj\Debug\CoderBro.Properties.Resources.resources
+F:\__C#.NET Folders\C#.Net Projects\CoderBro\CoderBro\obj\Debug\GenerateResource-ResGen.read.1.tlog
+F:\__C#.NET Folders\C#.Net Projects\CoderBro\CoderBro\obj\Debug\GenerateResource-ResGen.read.4.tlog
+F:\__C#.NET Folders\C#.Net Projects\CoderBro\CoderBro\obj\Debug\GenerateResource-ResGen.read.9.tlog
+F:\__C#.NET Folders\C#.Net Projects\CoderBro\CoderBro\obj\Debug\GenerateResource-ResGen.write.1.tlog
+E:\__C#.NET Folders\C#.Net Projects\CoderBro\CoderBro\obj\Debug\CoderBro.frmProjectDetails.resources
+C:\Users\user\Desktop\CoderBro\CoderBro\obj\Debug\CoderBro.exe
+C:\Users\user\Desktop\CoderBro\CoderBro\obj\Debug\CoderBro.pdb
+C:\Users\user\Desktop\CoderBro\CoderBro\bin\Debug\CoderBro.exe
+C:\Users\user\Desktop\CoderBro\CoderBro\bin\Debug\CoderBro.pdb
+C:\Users\user\Desktop\CoderBro\CoderBro\bin\Debug\ScintillaNet.dll
+C:\Users\user\Desktop\CoderBro\CoderBro\bin\Debug\ScintillaNet.pdb
+C:\Users\user\Desktop\CoderBro\CoderBro\obj\Debug\CoderBro.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\CoderBro\CoderBro\obj\Debug\CoderBro.frmMain.resources
+C:\Users\user\Desktop\CoderBro\CoderBro\obj\Debug\CoderBro.frmProjectDetails.resources
+C:\Users\user\Desktop\CoderBro\CoderBro\obj\Debug\CoderBro.Properties.Resources.resources
+C:\Users\user\Desktop\CoderBro\CoderBro\obj\Debug\CoderBro.csproj.GenerateResource.Cache
+E:\__C#.NET Folders\C#.Net Projects\CoderBro\CoderBro\bin\Debug\ScintillaNet.pdb
+E:\__C#.NET Folders\C#.Net Projects\CoderBro\CoderBro\obj\Debug\CoderBro.csprojResolveAssemblyReference.cache
+E:\__C#.NET Folders\C#.Net Projects\CoderBro\CoderBro\obj\Debug\CoderBro.csproj.GenerateResource.Cache
+D:\Dropbox\C# Projects\CoderBro\CoderBro\obj\Debug\CoderBro.exe
+D:\Dropbox\C# Projects\CoderBro\CoderBro\obj\Debug\CoderBro.pdb

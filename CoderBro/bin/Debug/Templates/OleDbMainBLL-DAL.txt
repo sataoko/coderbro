@@ -1,0 +1,222 @@
+using System;
+using System.Data;
+using System.Configuration;
+
+namespace Hukuk
+{
+    /// <summary>
+    /// Summary description for User
+    /// </summary>
+    public class @EntityName
+    {
+        @EntityProperties
+
+        private DAL@EntityName dal@EntityName;
+
+        public @EntityName()
+        {
+            dal@EntityName = new DAL@EntityName();
+        }
+
+        public RV Add()
+        {
+            RV r = dal@EntityName.Add(this);
+            r.SourceClassName+=">"+this.GetType().FullName;
+            r.SourceMethodName+=">"+System.Reflection.MethodBase.GetCurrentMethod().Name;
+            return r;
+        }
+
+        public RV Update()
+        {
+            RV r = dal@EntityName.Update(this);
+            r.SourceClassName+=">"+this.GetType().FullName;
+            r.SourceMethodName+=">"+System.Reflection.MethodBase.GetCurrentMethod().Name;
+            return r;
+        }
+
+        public @EntityName Get@EntityNameByID(string ID)
+        {
+            return dal@EntityName.Get@EntityNameByID(ID);
+        }        
+
+        public RV Get@EntityNames()
+        {
+            RV r = dal@EntityName.Get@EntityNames();
+            r.SourceClassName+=">"+this.GetType().FullName;
+            r.SourceMethodName+=">"+System.Reflection.MethodBase.GetCurrentMethod().Name;
+            return r;
+        }
+
+        public RV Delete@EntityNameByID(string ID)
+        {
+            return dal@EntityName.Delete@EntityNameByID(ID);
+        }
+
+    }
+}
+
+|
+
+using System;
+using System.Data;
+using System.Configuration;
+using System.Data.OleDb;
+
+namespace Hukuk
+{
+    /// <summary>
+    /// Summary description for DAL
+    /// </summary>
+    public class DAL@EntityName : ConnectionObject
+    {
+        public DAL@EntityName()
+        {
+            //
+            // TODO: Add constructor logic here
+            //
+        }
+
+        public RV Add(@EntityName @EntityName)
+        {
+            try
+            {
+                string sqlStr = @InsertString;
+
+
+                OleDbCommand cmd = new OleDbCommand(sqlStr, this.Connection);
+                
+                @CommandParametersWithClass  
+
+                this.Connection.Open();
+                this.ReturnValue.CommandResult = cmd.ExecuteNonQuery();
+                return this.ReturnValue;
+                
+            }
+            catch (Exception exp)
+            {
+                this.ReturnValue.ErrorMessage = exp.ToString();
+                this.ReturnValue.Error = true;
+                return this.ReturnValue;
+            }
+            finally
+            {
+                this.ReturnValue.SourceMethodName = System.Reflection.MethodBase.GetCurrentMethod().Name;
+                this.ReturnValue.SourceClassName = this.GetType().FullName;
+                this.Connection.Close();
+            }
+        }
+
+        public RV Update(@EntityName @EntityName)
+        {
+            try
+            {
+                string sqlStr = @UpdateString;
+                sqlStr += @EntityName.ID;
+
+                OleDbCommand cmd = new OleDbCommand(sqlStr, this.Connection);
+
+                @CommandParametersWithClass
+
+                this.Connection.Open();
+                this.ReturnValue.CommandResult = cmd.ExecuteNonQuery();
+                return this.ReturnValue;
+            }
+
+            catch (Exception exp)
+            {
+                this.ReturnValue.ErrorMessage = exp.ToString();
+                this.ReturnValue.Error = true;
+                return this.ReturnValue;
+            }
+            finally
+            {
+                this.ReturnValue.SourceMethodName = System.Reflection.MethodBase.GetCurrentMethod().Name;
+                this.ReturnValue.SourceClassName = this.GetType().FullName;
+                this.Connection.Close();
+            }
+        }
+
+        public RV Delete@EntityNameByID(string ID)
+        {
+            try
+            {
+                string sqlStr = @DeleteString;
+                sqlStr+=ID; 
+                OleDbCommand cmd = new OleDbCommand(sqlStr, this.Connection);
+                this.Connection.Open();
+                this.ReturnValue.CommandResult = cmd.ExecuteNonQuery();
+                return this.ReturnValue;
+            }
+
+            catch (Exception exp)
+            {
+                this.ReturnValue.ErrorMessage = exp.ToString();
+                this.ReturnValue.Error = true;
+                return this.ReturnValue;
+            }
+            finally
+            {
+                this.ReturnValue.SourceMethodName = System.Reflection.MethodBase.GetCurrentMethod().Name;
+                this.ReturnValue.SourceClassName = this.GetType().FullName;
+                this.Connection.Close();
+            }
+        }
+
+
+        public RV Get@EntityNameByID(string ID)
+        {
+            try
+            {
+                string selectString = @SelectString;
+                OleDbDataAdapter adp = new OleDbDataAdapter(selectString, this.Connection);
+                DataSet ds = new DataSet();
+                adp.Fill(ds, "X");
+                this.Connection.Open();
+                this.ReturnValue.Dataset = ds;
+                return this.ReturnValue;
+            }
+            catch (Exception exp)
+            {
+                this.ReturnValue.ErrorMessage = exp.ToString();
+                this.ReturnValue.Error = true;
+                return this.ReturnValue;
+            }
+            finally
+            {
+                this.ReturnValue.SourceMethodName = System.Reflection.MethodBase.GetCurrentMethod().Name;
+                this.ReturnValue.SourceClassName = this.GetType().FullName;
+                this.Connection.Close();
+            }
+
+        }
+
+
+        public RV Get@EntityNames()
+        {
+            try
+            {
+                string selectString = @SelectString;
+                OleDbDataAdapter adp = new OleDbDataAdapter(selectString, this.Connection);
+                DataSet ds = new DataSet();
+                adp.Fill(ds, "X");
+                this.Connection.Open();
+                this.ReturnValue.Dataset = ds;
+                return this.ReturnValue;
+            }
+            catch (Exception exp)
+            {
+                this.ReturnValue.ErrorMessage = exp.ToString();
+                this.ReturnValue.Error = true;
+                return this.ReturnValue;
+            }
+            finally
+            {
+                this.ReturnValue.SourceMethodName = System.Reflection.MethodBase.GetCurrentMethod().Name;
+                this.ReturnValue.SourceClassName = this.GetType().FullName;
+                this.Connection.Close();
+            }
+
+        }
+
+    }
+}

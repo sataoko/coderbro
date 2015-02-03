@@ -1,0 +1,148 @@
+﻿using System;
+using System.Data;
+using System.Configuration;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+
+namespace X
+{
+/// <summary>
+/// Summary description for User
+/// </summary>
+public class @EntityName
+{
+    @EntityProperties
+
+    private DAL@EntityName dal@EntityName;
+    
+    public @EntityName()
+	{
+		dal@EntityName = new DAL@EntityName();
+ 	}
+
+    public string Add()
+    {
+       return dal@EntityName.Add(this);
+    }
+
+    public string Update()
+    {
+       return dal@EntityName.Update(this);
+    }
+
+    public void Get@EntityNameByName(string username)
+    {
+       DataTable dt = dal@EntityName.Get@EntityNameByName(username);
+    }
+
+}
+}
+
+
+
+---------------------------------
+
+
+using System;
+using System.Data;
+using System.Configuration;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Data.OleDb;
+
+namespace X
+{
+    /// <summary>
+    /// Summary description for DAL@ClassName
+    /// </summary>
+    public class DAL@EntityName : ConnectionObject
+    {
+        public DAL@EntityName()
+        {
+            //
+            // TODO: Add constructor logic here
+            //
+        }
+
+        public string Add(@EntityName @EntityName)
+        {
+            try
+            {
+                this.Connection.Open();
+                string sqlStr = @InsertString;
+                OleDbCommand cmd = new OleDbCommand(sqlStr, this.Connection);
+
+                @CommandParametersSection;  
+
+                cmd.ExecuteNonQuery();
+                return "OK";
+            }
+            catch (Exception exp)
+            {
+                return exp.ToString();                
+            }
+            finally
+            {
+                this.Connection.Close();
+            }
+        }
+
+        public string Update(@EntityName @EntityName)
+        {
+            try
+            {
+                this.Connection.Open();
+                string sqlStr = @UpdateString;
+                OleDbCommand cmd = new OleDbCommand(sqlStr, this.Connection);
+
+                @CommandParametersSection;  
+
+                cmd.ExecuteNonQuery();
+                return "OK";
+
+            }
+            catch (Exception exp)
+            {
+                return exp.ToString();                
+            }
+            finally
+            {
+                this.Connection.Close();
+            }
+        }
+
+        public DataTable Get@EntityNameByName(string @EntityName)
+        {
+            try
+            {
+                string selectString = @SelectString;
+                this.Connection.Open();
+                OleDbDataAdapter adp = new OleDbDataAdapter(selectString, this.Connection);
+                DataSet ds = new DataSet();
+                adp.Fill(ds, "X");
+                DataTable dt = ds.Tables[0];
+                return dt;
+
+            }
+            catch (Exception exp)
+            {
+                throw;
+            }
+
+            finally
+            {
+                this.Connection.Close();
+            }
+
+        }
+
+    }
+}

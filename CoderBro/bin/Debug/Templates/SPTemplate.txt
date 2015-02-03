@@ -1,0 +1,18 @@
+CREATE PROCEDURE [dbo].[@SPNameInsert] 
+
+                                
+								@SPParameters
+																
+                                
+/*
+
+*/
+AS
+SELECT @Flag = 0
+
+@SPInsertString
+
+
+               
+                IF @@ERROR > 0 
+                SELECT @Flag = @@ERROR

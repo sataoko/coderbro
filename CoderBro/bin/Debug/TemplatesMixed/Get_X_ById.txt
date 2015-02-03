@@ -1,0 +1,17 @@
+ public @ClassName Get@ClassNameByID()
+    {
+ 
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ToString());
+        SqlCommand cmd = new SqlCommand("SELECT * FROM KISILER WHERE ID=" + CompanyID, conn);
+        conn.Open();
+        SqlDataAdapter adp = new SqlDataAdapter(cmd);
+        DataSet ds = new DataSet();
+        adp.Fill(ds);
+        conn.Close();
+        @ClassName  c= new @ClassName();
+        @LoadClass;
+        
+        return c;   
+         
+        
+    }

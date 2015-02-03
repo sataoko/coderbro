@@ -1,0 +1,19 @@
+ public void ExecuteSP(string storedProcedureName, SqlParameter[] sqlParameters)
+        {
+            SqlConnection conn = new SqlConnection(ConnectionStringMain);
+            SqlCommand cmd = new SqlCommand(StorepProcedureName, conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddRange(sqlParameters);
+
+            try
+            {
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+        }
